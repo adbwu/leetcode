@@ -37,5 +37,8 @@
  * @return {ListNode}
  */
 const addTwoNumbers = function(l1, l2) {
-   
+  //reverse lists
+  //combine numbers into one
+  //add numbers
+  //split total sum into array 
 };
