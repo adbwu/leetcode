@@ -73,7 +73,7 @@ const addTwoNumbers = function(l1, l2) {
   //combine numbers into one
   //add numbers
   const reversedSum = String(concatLL(reverseLinkedList(l1)) + concatLL(reverseLinkedList(l2)));
-  //split total sum array into linked list
+  //split total sum into array, then convert to linked list
   let reversedNodeList = null;
 
   reversedSum.split("").forEach((element) => { 
