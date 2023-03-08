@@ -48,7 +48,6 @@ const reverseLinkedList = (list) => {
       //store current list.next as next
       next = list.next;
       //set list.next as current prev
-      (console.log(list, list.val, next))
       list.next = prev;
       //store current item as new prev
       prev = list;
@@ -66,13 +65,22 @@ const concatLL = (list) => {
     final = final + list.val;
     list = list.next;
   }
-  return final;
+  return Number(final);
 }
 
 const addTwoNumbers = function(l1, l2) {
   //reverse lists
-  console.log(concatLL(reverseLinkedList(l1)));
   //combine numbers into one
   //add numbers
-  //split total sum into array 
+  const reversedSum = String(concatLL(reverseLinkedList(l1)) + concatLL(reverseLinkedList(l2)));
+  //split total sum array into linked list
+  let reversedNodeList = null;
+
+  reversedSum.split("").forEach((element) => { 
+     reversedNodeList = {
+        val: element,
+        next: reversedNodeList
+     }
+  })
+  return reversedNodeList;
 };
