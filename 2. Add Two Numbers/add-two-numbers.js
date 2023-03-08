@@ -38,19 +38,26 @@
  */
 
 const reverseLinkedList = (list) => {
-  //while finding tail node
-    //change links from next to previous
-      //get next item
-      //set current item as next.item's new "next"
-  while(list.next !== null) {
+  //define vars to hold items for reversal
+  let prev = null;
+  let next = null; 
 
+  //while finding tail node
+  while(list.next !== null) {
+    //change links from next to previous
+      //store next item as prev
+      prev = list.next
+      //set current item as next.item's new "next"
+      prev.next = list
   }
   //redefine tail as head
   //return reversed list
+  return list
 }
 
 const addTwoNumbers = function(l1, l2) {
   //reverse lists
+  console.log(reverseLinkedList(l1), l1)
   //combine numbers into one
   //add numbers
   //split total sum into array 
