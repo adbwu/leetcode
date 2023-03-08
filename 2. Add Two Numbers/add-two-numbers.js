@@ -36,6 +36,16 @@
  * @param {ListNode} l2
  * @return {ListNode}
  */
+
+const reverseLinkedList = (list) => {
+  //find tail node
+  while(list.next !== null) {
+    
+  }
+  //redefine tail as head
+  //return new head
+}
+
 const addTwoNumbers = function(l1, l2) {
   //reverse lists
   //combine numbers into one
