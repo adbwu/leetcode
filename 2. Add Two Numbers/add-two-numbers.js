@@ -59,9 +59,19 @@ const reverseLinkedList = (list) => {
   return prev
 }
 
+const concatLL = (list) => {
+  let final = "";
+
+  while (list !== null) {
+    final = final + list.val;
+    list = list.next;
+  }
+  return final;
+}
+
 const addTwoNumbers = function(l1, l2) {
   //reverse lists
-console.log(reverseLinkedList(l1))
+  console.log(concatLL(reverseLinkedList(l1)));
   //combine numbers into one
   //add numbers
   //split total sum into array 
