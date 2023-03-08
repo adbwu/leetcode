@@ -45,12 +45,15 @@ const reverseLinkedList = (list) => {
   //while finding tail node
   while(list !== null) {
     //change links from next to previous
-      //store current item as prev
+      //store current list.next as next
+      next = list.next;
       //set list.next as current prev
+      list.next = prev;
       //store current item as new prev
+      prev = list;
       //redefine list as current next
+      list = next;
   }
-  //redefine tail as head
   //return reversed list
   return list
 }
