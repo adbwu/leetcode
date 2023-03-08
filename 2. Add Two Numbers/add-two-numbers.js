@@ -38,12 +38,13 @@
  */
 
 const reverseLinkedList = (list) => {
-  //find tail node
+  //change links from next to previous
   while(list.next !== null) {
-    
+
   }
+  //find tail node
   //redefine tail as head
-  //return new head
+  //return reversed list
 }
 
 const addTwoNumbers = function(l1, l2) {
